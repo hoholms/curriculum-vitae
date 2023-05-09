@@ -1,0 +1,23 @@
+{
+  "name": "cv-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx tailwindcss -i ./input.css -o ./css/main.css --watch",
+    "build": "npx tailwindcss -i ./input.css -o ./css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.8.4",
+    "prettier-plugin-tailwindcss": "^0.2.3",
+    "tailwindcss": "^3.2.6"
+  },
+  "dependencies": {
+    "aos": "^3.0.0-beta.6",
+    "bootstrap-icons": "^1.10.3",
+    "preline": "^1.7.0"
+  }
+}
