@@ -5,8 +5,8 @@ const path = require('path');
 const app = express();
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'public')));
-app.use('/node_modules', express.static(path.join(__dirname, 'node_modules')))
+app.use(express.static(path.join(__dirname)));
+app.use('/node_modules', express.static(path.join(__dirname, '/node_modules')))
 
 const port = process.env.PORT || 3000;
 
