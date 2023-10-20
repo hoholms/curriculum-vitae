@@ -3,112 +3,112 @@
 @tailwind utilities;
 
 .bg-polka {
-  background-color: #e5e5f7;
-  opacity: 1;
-  background-image: radial-gradient(#444cf7 1.3px, #e5e5f7 1.3px);
-  background-size: 26px 26px;
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image: radial-gradient(#444cf7 1.3px, #e5e5f7 1.3px);
+    background-size: 26px 26px;
 }
 
 @media (prefers-color-scheme: dark) {
-  .bg-polka {
-    background-color: #0f172a;
-    opacity: 1;
-    background-image: radial-gradient(#312e81 1.3px, #0f172a 1.3px);
-    background-size: 26px 26px;
-  }
+    .bg-polka {
+        background-color: #0f172a;
+        opacity: 1;
+        background-image: radial-gradient(#312e81 1.3px, #0f172a 1.3px);
+        background-size: 26px 26px;
+    }
 }
 
 .list-dash {
-  list-style-type: "– ";
+    list-style-type: "– ";
 }
 
 .delay-0 {
-  animation-delay: 0s;
+    animation-delay: 0s;
 }
 
 .delay-1 {
-  animation-delay: 0.3s;
+    animation-delay: 0.3s;
 }
 
 .delay-2 {
-  animation-delay: 0.6s;
+    animation-delay: 0.6s;
 }
 
 .delay-3 {
-  animation-delay: 0.9s;
+    animation-delay: 0.9s;
 }
 
 .duration-1 {
-  animation-duration: 0.3s;
+    animation-duration: 0.3s;
 }
 
 .duration-2 {
-  animation-duration: 0.6s;
+    animation-duration: 0.6s;
 }
 
 .duration-3 {
-  animation-duration: 0.9s;
+    animation-duration: 0.9s;
 }
 
 .left-appear {
-  animation-name: left-animate-fade;
-  animation-fill-mode: backwards;
+    animation-name: left-animate-fade;
+    animation-fill-mode: backwards;
 }
 
 .down-appear {
-  animation-name: down-animate-fade;
-  animation-fill-mode: backwards;
+    animation-name: down-animate-fade;
+    animation-fill-mode: backwards;
 }
 
 @keyframes left-animate-fade {
-  0% {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 @keyframes down-animate-fade {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .typing-demo {
-  width: 23ch;
-  animation: typing 2s steps(23), blink 0.7s step-end infinite alternate;
-  animation-delay: 0.6s;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 2px solid;
-  font-size: 1em !important;
-  opacity: 0%;
-  animation-fill-mode: forwards;
+    width: 22ch;
+    animation: typing 2s steps(22), blink 0.7s step-end infinite alternate;
+    animation-delay: 0.6s;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+    font-size: 1em !important;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 @keyframes typing {
-  0% {
-    opacity: 100%;
-  }
-  from {
-    width: 0;
-  }
-  to {
-    opacity: 100%;
-    white-space: wrap;
-  }
+    0% {
+        opacity: 100%;
+    }
+    from {
+        width: 0;
+    }
+    to {
+        opacity: 100%;
+        white-space: nowrap;
+    }
 }
 
 @keyframes blink {
-  50% {
-    border-color: transparent;
-  }
+    50% {
+        border-color: transparent;
+    }
 }

@@ -1179,8 +1179,8 @@ video {
 }
 
 .typing-demo {
-  width: 23ch;
-  animation: typing 2s steps(23), blink 0.7s step-end infinite alternate;
+  width: 22ch;
+  animation: typing 2s steps(22), blink 0.7s step-end infinite alternate;
   animation-delay: 0.6s;
   white-space: nowrap;
   overflow: hidden;
@@ -1201,7 +1201,7 @@ video {
 
   to {
     opacity: 100%;
-    white-space: wrap;
+    white-space: nowrap;
   }
 }
 

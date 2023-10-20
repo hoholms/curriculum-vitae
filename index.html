@@ -1,505 +1,524 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <link
-      rel="icon"
-      type="image/svg+xml"
-      href="data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktcGVyc29uLWZpbGwtY2hlY2siIHZpZXdCb3g9IjAgMCAxNiAxNiI+CjxzdHlsZT4KICAgICAgICBwYXRoIHsKICAgICAgICAgICAgZmlsbDogIzAwMDsKICAgICAgICB9CiAgICAgICAgQG1lZGlhIChwcmVmZXJzLWNvbG9yLXNjaGVtZTogZGFyaykgewogICAgICAgICAgICBwYXRoIHsKICAgICAgICAgICAgICAgIGZpbGw6ICNmZmY7CiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICA8L3N0eWxlPiAgCjxwYXRoIGQ9Ik0xMi41IDE2YTMuNSAzLjUgMCAxIDAgMC03IDMuNSAzLjUgMCAwIDAgMCA3Wm0xLjY3OS00LjQ5My0xLjMzNSAyLjIyNmEuNzUuNzUgMCAwIDEtMS4xNzQuMTQ0bC0uNzc0LS43NzNhLjUuNSAwIDAgMSAuNzA4LS43MDhsLjU0Ny41NDggMS4xNy0xLjk1MWEuNS41IDAgMSAxIC44NTguNTE0Wk0xMSA1YTMgMyAwIDEgMS02IDAgMyAzIDAgMCAxIDYgMFoiLz4KICA8cGF0aCBkPSJNMiAxM2MwIDEgMSAxIDEgMWg1LjI1NkE0LjQ5MyA0LjQ5MyAwIDAgMSA4IDEyLjVhNC40OSA0LjQ5IDAgMCAxIDEuNTQ0LTMuMzkzQzkuMDc3IDkuMDM4IDguNTY0IDkgOCA5Yy01IDAtNiAzLTYgNFoiLz4KPC9zdmc+"
+            rel="icon"
+            type="image/svg+xml"
+            href="data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktcGVyc29uLWZpbGwtY2hlY2siIHZpZXdCb3g9IjAgMCAxNiAxNiI+CjxzdHlsZT4KICAgICAgICBwYXRoIHsKICAgICAgICAgICAgZmlsbDogIzAwMDsKICAgICAgICB9CiAgICAgICAgQG1lZGlhIChwcmVmZXJzLWNvbG9yLXNjaGVtZTogZGFyaykgewogICAgICAgICAgICBwYXRoIHsKICAgICAgICAgICAgICAgIGZpbGw6ICNmZmY7CiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICA8L3N0eWxlPiAgCjxwYXRoIGQ9Ik0xMi41IDE2YTMuNSAzLjUgMCAxIDAgMC03IDMuNSAzLjUgMCAwIDAgMCA3Wm0xLjY3OS00LjQ5My0xLjMzNSAyLjIyNmEuNzUuNzUgMCAwIDEtMS4xNzQuMTQ0bC0uNzc0LS43NzNhLjUuNSAwIDAgMSAuNzA4LS43MDhsLjU0Ny41NDggMS4xNy0xLjk1MWEuNS41IDAgMSAxIC44NTguNTE0Wk0xMSA1YTMgMyAwIDEgMS02IDAgMyAzIDAgMCAxIDYgMFoiLz4KICA8cGF0aCBkPSJNMiAxM2MwIDEgMSAxIDEgMWg1LjI1NkE0LjQ5MyA0LjQ5MyAwIDAgMSA4IDEyLjVhNC40OSA0LjQ5IDAgMCAxIDEuNTQ0LTMuMzkzQzkuMDc3IDkuMDM4IDguNTY0IDkgOCA5Yy01IDAtNiAzLTYgNFoiLz4KPC9zdmc+"
     />
 
-    <link href="./css/main.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/aos/aos.css" />
+    <link href="./css/main.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/node_modules/aos/dist/aos.css"/>
     <link
-      rel="stylesheet"
-      href="/icons/bootstrap-icons.css"
+            rel="stylesheet"
+            href="/node_modules/bootstrap-icons/font/bootstrap-icons.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
     <title>Curriculum Vitae</title>
-  </head>
-  <body class="bg-polka">
-    <div
-      class="z-50 flex w-full flex-wrap text-sm max-lg:sticky max-lg:top-0 md:flex-nowrap md:justify-start lg:fixed lg:top-0 lg:left-0 lg:bottom-0 lg:w-64"
+</head>
+<body class="bg-polka">
+<div
+        class="z-50 flex w-full flex-wrap text-sm max-lg:sticky max-lg:top-0 md:flex-nowrap md:justify-start lg:fixed lg:top-0 lg:left-0 lg:bottom-0 lg:w-64"
+        data-tilt data-tilt-scale="1.01" data-tilt-max="1"
+>
+    <nav
+            class="relative mx-2 mt-6 w-full max-w-7xl rounded-[36px] border border-gray-200 bg-white bg-opacity-80 py-3 px-4 backdrop-blur-sm transition-all [--scrollspy-offset:94] dark:border-gray-700 dark:bg-gray-800 dark:bg-opacity-40 dark:backdrop-blur-sm md:flex md:items-center md:justify-between md:py-0 md:px-6 md:[--scrollspy-offset:118] lg:mb-6 lg:ml-9 lg:flex-col lg:py-6 lg:px-8 lg:[--scrollspy-offset:24]"
+            data-hs-scrollspy="#scrollspy"
+            aria-label="Global"
+            data-tilt data-tilt-glare data-tilt-max-glare="0.07" data-tilt-max="0"
     >
-      <nav
-        class="relative mx-2 mt-6 w-full max-w-7xl rounded-[36px] border border-gray-200 bg-white bg-opacity-80 py-3 px-4 backdrop-blur-sm transition-all [--scrollspy-offset:94] dark:border-gray-700 dark:bg-gray-800 dark:bg-opacity-40 dark:backdrop-blur-sm md:flex md:items-center md:justify-between md:py-0 md:px-6 md:[--scrollspy-offset:118] lg:mb-6 lg:ml-9 lg:flex-col lg:py-6 lg:px-8 lg:[--scrollspy-offset:24]"
-        data-hs-scrollspy="#scrollspy"
-        aria-label="Global"
-      >
         <div class="flex items-center justify-between lg:flex-col">
-          <img
-            class="hidden h-[3.875rem] w-[3.875rem] rounded-full ring-2 ring-gray-200 dark:ring-gray-700 lg:mb-3 lg:block lg:h-[5.875rem] lg:w-[5.875rem]"
-            src="/img/avatar.jpg"
-            alt="Me"
-          />
-          <a
-            class="active text-center text-xl font-semibold transition hs-scrollspy-active:drop-shadow-md dark:text-white max-lg:flex-none lg:text-3xl"
-            href="#about"
-            aria-label="Brand"
+            <img
+                    class="hidden h-[3.875rem] w-[3.875rem] rounded-full ring-2 ring-gray-200 dark:ring-gray-700 lg:mb-3 lg:block lg:h-[5.875rem] lg:w-[5.875rem]"
+                    src="/img/avatar.jpg"
+                    alt="Me"
+            />
+            <a
+                    class="active text-center text-xl font-semibold transition hs-scrollspy-active:drop-shadow-md dark:text-white max-lg:flex-none lg:text-3xl"
+                    href="#about"
+                    aria-label="Brand"
             >Bugaenco Nikita</a
-          >
-          <div class="md:hidden">
-            <button
-              type="button"
-              class="hs-collapse-toggle inline-flex items-center justify-center gap-2 rounded-full border bg-white p-2 align-middle text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white dark:border-gray-700 dark:bg-slate-900 dark:text-gray-400 dark:hover:bg-slate-800 dark:hover:text-white dark:focus:ring-offset-gray-800"
-              data-hs-collapse="#navbar-collapse-with-animation"
-              aria-controls="navbar-collapse-with-animation"
-              aria-label="Toggle navigation"
             >
-              <svg
-                class="h-4 w-4 hs-collapse-open:hidden"
-                width="16"
-                height="16"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                />
-              </svg>
-              <svg
-                class="hidden h-4 w-4 hs-collapse-open:block"
-                width="16"
-                height="16"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
-                />
-              </svg>
-            </button>
-          </div>
+            <div class="md:hidden">
+                <button
+                        type="button"
+                        class="hs-collapse-toggle inline-flex items-center justify-center gap-2 rounded-full border bg-white p-2 align-middle text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white dark:border-gray-700 dark:bg-slate-900 dark:text-gray-400 dark:hover:bg-slate-800 dark:hover:text-white dark:focus:ring-offset-gray-800"
+                        data-hs-collapse="#navbar-collapse-with-animation"
+                        aria-controls="navbar-collapse-with-animation"
+                        aria-label="Toggle navigation"
+                >
+                    <svg
+                            class="h-4 w-4 hs-collapse-open:hidden"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            viewBox="0 0 16 16"
+                    >
+                        <path
+                                fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                        />
+                    </svg>
+                    <svg
+                            class="hidden h-4 w-4 hs-collapse-open:block"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            viewBox="0 0 16 16"
+                    >
+                        <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                        />
+                    </svg>
+                </button>
+            </div>
         </div>
         <div
-          id="navbar-collapse-with-animation"
-          class="hs-collapse hidden grow basis-full overflow-hidden transition-all duration-300 md:block lg:w-full lg:overflow-y-auto"
+                id="navbar-collapse-with-animation"
+                class="hs-collapse hidden grow basis-full overflow-hidden transition-all duration-300 md:block lg:w-full lg:overflow-y-auto"
         >
-          <div
-            class="mt-5 flex flex-col gap-y-4 gap-x-0 md:mt-0 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:pl-7 lg:mt-6 lg:flex-col lg:items-start lg:text-lg"
-          >
-            <a
-              class="font-medium text-gray-500 transition hover:text-gray-400 hs-scrollspy-active:text-indigo-600 dark:text-gray-400 dark:hover:text-gray-500 dark:hs-scrollspy-active:text-indigo-500 md:py-6"
-              href="#general"
-              aria-current="page"
+            <div
+                    class="mt-5 flex flex-col gap-y-4 gap-x-0 md:mt-0 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:pl-7 lg:mt-6 lg:flex-col lg:items-start lg:text-lg"
             >
-              General
-            </a>
-            <a
-              class="activetransition font-medium text-gray-500 hover:text-gray-400 hs-scrollspy-active:text-indigo-600 dark:text-gray-400 dark:hover:text-gray-500 dark:hs-scrollspy-active:text-indigo-500 md:py-6"
-              href="#education"
-            >
-              Education
-            </a>
-            <a
-              class="font-medium text-gray-500 transition hover:text-gray-400 hs-scrollspy-active:text-indigo-600 dark:text-gray-400 dark:hover:text-gray-500 dark:hs-scrollspy-active:text-indigo-500 md:py-6"
-              href="#work"
-            >
-              Work
-            </a>
-            <a
-              class="font-medium text-gray-500 transition hover:text-gray-400 hs-scrollspy-active:text-indigo-600 dark:text-gray-400 dark:hover:text-gray-500 dark:hs-scrollspy-active:text-indigo-500 md:py-6"
-              href="#skills"
-            >
-              Skills
-            </a>
-          </div>
+                <a
+                        class="font-medium text-gray-500 transition hover:text-gray-400 hs-scrollspy-active:text-indigo-600 dark:text-gray-400 dark:hover:text-gray-500 dark:hs-scrollspy-active:text-indigo-500 md:py-6"
+                        href="#general"
+                        aria-current="page"
+                >
+                    General
+                </a>
+                <a
+                        class="activetransition font-medium text-gray-500 hover:text-gray-400 hs-scrollspy-active:text-indigo-600 dark:text-gray-400 dark:hover:text-gray-500 dark:hs-scrollspy-active:text-indigo-500 md:py-6"
+                        href="#education"
+                >
+                    Education
+                </a>
+                <a
+                        class="font-medium text-gray-500 transition hover:text-gray-400 hs-scrollspy-active:text-indigo-600 dark:text-gray-400 dark:hover:text-gray-500 dark:hs-scrollspy-active:text-indigo-500 md:py-6"
+                        href="#work"
+                >
+                    Work
+                </a>
+                <a
+                        class="font-medium text-gray-500 transition hover:text-gray-400 hs-scrollspy-active:text-indigo-600 dark:text-gray-400 dark:hover:text-gray-500 dark:hs-scrollspy-active:text-indigo-500 md:py-6"
+                        href="#skills"
+                >
+                    Skills
+                </a>
+            </div>
         </div>
-      </nav>
-    </div>
+    </nav>
+</div>
 
-    <div class="w-full px-4 sm:px-6 md:px-8 lg:pl-[18rem]">
-      <div
-        class="mx-auto max-w-3xl py-6 dark:text-white xl:ml-0 xl:mr-64 xl:max-w-none xl:pr-16"
-      >
+<div class="w-full px-4 sm:px-6 md:px-8 lg:pl-[18rem]">
+    <div
+            class="mx-auto max-w-3xl py-6 dark:text-white xl:ml-0 xl:mr-64 xl:max-w-none xl:pr-16"
+    >
         <div id="scrollspy">
-          <div
-            id="about"
-            class="mb-6 rounded-[36px] border border-gray-200 bg-white bg-opacity-80 p-6 backdrop-blur-sm dark:border-gray-700 dark:bg-gray-800 dark:bg-opacity-40 dark:backdrop-blur-sm"
-          >
-            <h2
-              class="mb-3 text-lg font-semibold text-gray-800 dark:text-white sm:hidden"
+            <div
+                    id="about"
+                    class="mb-6 rounded-[36px] border border-gray-200 bg-white bg-opacity-80 p-6 backdrop-blur-sm dark:border-gray-700 dark:bg-gray-800 dark:bg-opacity-40 dark:backdrop-blur-sm"
             >
-              About me
-            </h2>
-            <div class="flex justify-between max-sm:flex-col-reverse">
-              <div class="w-full self-center">
                 <h2
-                  class="mb-3 text-lg font-semibold text-gray-800 dark:text-white max-sm:hidden"
+                        class="mb-3 text-lg font-semibold text-gray-800 dark:text-white sm:hidden"
                 >
-                  About me
+                    About me
                 </h2>
-                <span
-                  class="left-appear duration-2 delay-0 block text-2xl font-bold text-indigo-600 dark:text-indigo-500"
-                >
+                <div class="flex justify-between max-sm:flex-col-reverse">
+                    <div class="w-full self-center">
+                        <h2
+                                class="mb-3 text-lg font-semibold text-gray-800 dark:text-white max-sm:hidden"
+                        >
+                            About me
+                        </h2>
+                        <span
+                                class="left-appear duration-2 delay-0 block text-2xl font-bold text-indigo-600 dark:text-indigo-500"
+                        >
                   Hi, I am
                 </span>
-                <span
-                  class="left-appear duration-2 delay-1 block text-3xl font-bold"
-                >
+                        <span
+                                class="left-appear duration-2 delay-1 block text-3xl font-bold"
+                        >
                   Bugaenco Nikita
                 </span>
-                <div class="typing-demo font-mono text-lg">
-                  A young Java developer.
+                        <div class="typing-demo font-mono text-lg">
+                            Junior Java Developer
+                        </div>
+                    </div>
+                    <img
+                            src="/img/avatar.jpg"
+                            alt="Me"
+                            class="down-appear duration-2 delay-1 h-28 w-28 self-center rounded-full object-fill shadow-md ring-2 ring-gray-200 transition-all hover:shadow-xl dark:ring-gray-700 sm:h-36 sm:w-36"
+                    />
                 </div>
-              </div>
-              <img
-                src="/img/avatar.jpg"
-                alt="Me"
-                class="down-appear duration-2 delay-1 h-28 w-28 self-center rounded-full object-fill shadow-md ring-2 ring-gray-200 transition-all hover:shadow-xl dark:ring-gray-700 sm:h-36 sm:w-36"
-              />
             </div>
-          </div>
 
-          <div
-            id="general"
-            data-aos="fade-up"
-            data-aos-duration="600"
-            class="mb-6 rounded-[36px] border border-gray-200 bg-white bg-opacity-80 p-6 backdrop-blur-sm dark:border-gray-700 dark:bg-gray-800 dark:bg-opacity-40 dark:backdrop-blur-sm"
-          >
-            <h2
-              class="mb-3 text-lg font-semibold text-gray-800 dark:text-white"
+            <div
+                    id="general"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    class="mb-6 rounded-[36px] border border-gray-200 bg-white bg-opacity-80 p-6 backdrop-blur-sm dark:border-gray-700 dark:bg-gray-800 dark:bg-opacity-40 dark:backdrop-blur-sm"
             >
-              General information
-            </h2>
-            <div class="flex justify-between gap-5 max-md:flex-col">
-              <div class="self-center md:w-[37%]">
-                <ul
-                  class="list-dash list-inside font-mono text-lg font-medium text-gray-900 dark:text-gray-200"
+                <h2
+                        class="mb-3 text-lg font-semibold text-gray-800 dark:text-white"
                 >
-                  <li>Bugaenco Nichita Igor</li>
-                  <li>Oct 19 2004</li>
-                  <li>Male</li>
-                  <li>Chișinău, Moldova</li>
-                </ul>
-              </div>
-              <div class="md:w-[63%]">
-                <p
-                  class="rounded-[36px] bg-indigo-100 p-6 text-justify text-sm dark:bg-indigo-900"
+                    General information
+                </h2>
+                <div class="flex justify-between gap-5 max-md:flex-col">
+                    <div class="self-center md:w-[37%]">
+                        <ul
+                                class="list-dash list-inside font-mono text-lg font-medium text-gray-900 dark:text-gray-200"
+                        >
+                            <li>Bugaenco Nichita Igor</li>
+                            <li>Oct 19 2004</li>
+                            <li>Male</li>
+                            <li>Chișinău, Moldova</li>
+                        </ul>
+                    </div>
+                    <div class="md:w-[63%]">
+                        <p
+                                class="rounded-[36px] bg-indigo-100 p-6 text-justify text-sm dark:bg-indigo-900"
+                        >
+                            I am a Java back-end developer who is responsible, determined,
+                            and committed to working effectively in a team. I am
+                            self-motivated, quick to learn, and dedicated to becoming an
+                            asset to any team I work with. My experience encompasses a
+                            diverse range of projects, including software development,
+                            mobile apps, and web apps. I have spent numerous hours honing
+                            my skills and am eager to demonstrate my abilities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                    id="education"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    class="mb-6 rounded-[36px] border border-gray-200 bg-white bg-opacity-80 p-6 backdrop-blur-sm dark:border-gray-700 dark:bg-gray-800 dark:bg-opacity-40 dark:backdrop-blur-sm"
+            >
+                <h2
+                        class="mb-3 text-lg font-semibold text-gray-800 dark:text-white"
                 >
-                  I am a Java back-end developer who is responsible, determined,
-                  and committed to working effectively in a team. I am
-                  self-motivated, quick to learn, and dedicated to becoming an
-                  asset to any team I work with. My experience encompasses a
-                  diverse range of projects, including software development,
-                  mobile apps, and web apps. I have spent numerous hours honing
-                  my skills and am eager to demonstrate my abilities.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            id="education"
-            data-aos="fade-up"
-            data-aos-duration="600"
-            class="mb-6 rounded-[36px] border border-gray-200 bg-white bg-opacity-80 p-6 backdrop-blur-sm dark:border-gray-700 dark:bg-gray-800 dark:bg-opacity-40 dark:backdrop-blur-sm"
-          >
-            <h2
-              class="mb-3 text-lg font-semibold text-gray-800 dark:text-white"
-            >
-              Education
-            </h2>
-            <div class="flex flex-col">
-              <div
-                data-aos="fade-up"
-                data-aos-duration="600"
-                data-aos-delay="100"
-                data-aos-anchor="#education"
-                class="border-l-2 pl-5 pt-0"
-              >
-                <div
-                  class="relative left-[-25px] top-[1.25rem] inline-block h-2 w-2 rounded-full bg-indigo-600 dark:bg-indigo-500"
-                ></div>
-                <p class="text-sm text-gray-400">2011–2016</p>
-                <h2 class="font-mono text-xl">
-                  Liceul Tehnologic ORT B.Z. Herzli
+                    Education
                 </h2>
-                <p class="text-sm text-gray-400">Received primary education</p>
-              </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="600"
-                data-aos-delay="300"
-                data-aos-anchor="#education"
-                class="border-l-2 pl-5 pt-0"
-              >
-                <div
-                  class="relative left-[-25px] top-[1.25rem] inline-block h-2 w-2 rounded-full bg-indigo-600 dark:bg-indigo-500"
-                ></div>
-                <p class="text-sm text-gray-400">2016–2020</p>
-                <h2 class="font-mono text-xl">
-                  Complex Educațional „Kiril şi Metodiu”
-                </h2>
-                <p class="text-sm text-gray-400">
-                  Received secondary education
-                </p>
-              </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="600"
-                data-aos-delay="500"
-                data-aos-anchor="#education"
-                class="border-l-2 pl-5 pt-0"
-              >
-                <div
-                  class="relative left-[-25px] top-[1.25rem] inline-block h-2 w-2 rounded-full bg-indigo-600 dark:bg-indigo-500"
-                ></div>
-                <p class="text-sm text-gray-400">2020-2024</p>
-                <h2 class="font-mono text-xl">
-                  Centrul de Excelență în Informatică și Tehnologii
-                  Informaționale
-                </h2>
-                <p class="text-sm text-gray-400">
-                  Associate degree in Programming and programs analysis in CEITI
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            id="work"
-            data-aos="fade-up"
-            data-aos-duration="600"
-            class="mb-6 rounded-[36px] border border-gray-200 bg-white bg-opacity-80 p-6 backdrop-blur-sm dark:border-gray-700 dark:bg-gray-800 dark:bg-opacity-40 dark:backdrop-blur-sm"
-          >
-            <h2
-              class="mb-3 text-lg font-semibold text-gray-800 dark:text-white"
-            >
-              Work Experience
-            </h2>
-            <div class="flex flex-col">
-              <div
-                data-aos="fade-up"
-                data-aos-duration="600"
-                data-aos-delay="100"
-                data-aos-anchor="#work"
-                class="border-l-2 pl-5 pt-0"
-              >
-                <div
-                  class="relative left-[-25px] top-[1.25rem] inline-block h-2 w-2 rounded-full bg-indigo-600 dark:bg-indigo-500"
-                ></div>
-                <p class="text-sm text-gray-400">Oct-Nov 2022</p>
-                <h2 class="font-mono text-xl">Endava Tech Course Java</h2>
-                <p class="text-sm text-gray-400">
-                  Upgraded my skills, made a big project and got a&nbsp;
-                  <button
-                    type="button"
-                    class="inline-flex items-center justify-center gap-2 rounded-[36px] border border-transparent bg-indigo-100 py-1 px-2 text-sm font-semibold text-indigo-500 ring-offset-white transition-all hover:bg-indigo-100 hover:text-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
-                    data-hs-overlay="#endava-certif-modal"
-                  >
-                    certificate
-                  </button>
-                </p>
-              </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="600"
-                data-aos-delay="300"
-                data-aos-anchor="#work"
-                class="border-l-2 pl-5 pt-0"
-              >
-                <div
-                  class="relative left-[-25px] top-[1.25rem] inline-block h-2 w-2 rounded-full bg-indigo-600 dark:bg-indigo-500"
-                ></div>
-                <p class="text-sm text-gray-400">Feb-Aug 2023</p>
-                <h2 class="font-mono text-xl">Intership at Grid Dynamics</h2>
-                <p class="text-sm text-gray-400">Learning on intership.</p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            id="skills"
-            data-aos="fade-up"
-            data-aos-duration="600"
-            class="mb-6 rounded-[36px] border border-gray-200 bg-white bg-opacity-80 p-6 backdrop-blur-sm dark:border-gray-700 dark:bg-gray-800 dark:bg-opacity-40 dark:backdrop-blur-sm"
-          >
-            <h2
-              class="mb-3 text-lg font-semibold text-gray-800 dark:text-white"
-            >
-              Skills
-            </h2>
-            <div class="flex flex-wrap max-md:flex-col">
-              <div
-                class="my-5 flex px-5 md:w-2/4"
-                data-aos="fade-right"
-                data-aos-anchor="#skills"
-                data-aos-delay="200"
-              >
-                <i
-                  class="bi-translate px-3 text-4xl text-gray-800 dark:text-white"
-                ></i>
-                <div>
-                  <h2 class="font-mono text-3xl">Languages</h2>
-                  <p>Russian (native), English (advanced), Romanian</p>
+                <div class="flex flex-col">
+                    <div
+                            data-aos="fade-up"
+                            data-aos-duration="600"
+                            data-aos-delay="100"
+                            data-aos-anchor="#education"
+                            class="border-l-2 pl-5 pt-0"
+                    >
+                        <div
+                                class="relative left-[-25px] top-[1.25rem] inline-block h-2 w-2 rounded-full bg-indigo-600 dark:bg-indigo-500"
+                        ></div>
+                        <p class="text-sm text-gray-400">2011–2016</p>
+                        <h2 class="font-mono text-xl">
+                            Liceul Tehnologic ORT B.Z. Herzli
+                        </h2>
+                        <p class="text-sm text-gray-400">Received primary education</p>
+                    </div>
+                    <div
+                            data-aos="fade-up"
+                            data-aos-duration="600"
+                            data-aos-delay="300"
+                            data-aos-anchor="#education"
+                            class="border-l-2 pl-5 pt-0"
+                    >
+                        <div
+                                class="relative left-[-25px] top-[1.25rem] inline-block h-2 w-2 rounded-full bg-indigo-600 dark:bg-indigo-500"
+                        ></div>
+                        <p class="text-sm text-gray-400">2016–2020</p>
+                        <h2 class="font-mono text-xl">
+                            Complex Educațional „Kiril şi Metodiu”
+                        </h2>
+                        <p class="text-sm text-gray-400">
+                            Received secondary education
+                        </p>
+                    </div>
+                    <div
+                            data-aos="fade-up"
+                            data-aos-duration="600"
+                            data-aos-delay="500"
+                            data-aos-anchor="#education"
+                            class="border-l-2 pl-5 pt-0"
+                    >
+                        <div
+                                class="relative left-[-25px] top-[1.25rem] inline-block h-2 w-2 rounded-full bg-indigo-600 dark:bg-indigo-500"
+                        ></div>
+                        <p class="text-sm text-gray-400">2020-2024</p>
+                        <h2 class="font-mono text-xl">
+                            Centrul de Excelență în Informatică și Tehnologii
+                            Informaționale
+                        </h2>
+                        <p class="text-sm text-gray-400">
+                            Associate degree in Programming and programs analysis in CEITI
+                        </p>
+                    </div>
                 </div>
-              </div>
+            </div>
 
-              <div
-                class="my-5 flex px-5 md:w-2/4"
-                data-aos="fade-left"
-                data-aos-anchor="#skills"
-                data-aos-delay="400"
-              >
-                <i
-                  class="bi-database-fill px-3 text-4xl text-gray-800 dark:text-white"
-                ></i>
-                <div>
-                  <h2 class="font-mono text-3xl">Databases</h2>
-                  <p class="block">Microsoft SQL Server, PostgreSQL</p>
-                  <p class="block">
-                    T-SQL, PL/SQL, Isolation levels, ACID, Normal forms
-                  </p>
+            <div
+                    id="work"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    class="mb-6 rounded-[36px] border border-gray-200 bg-white bg-opacity-80 p-6 backdrop-blur-sm dark:border-gray-700 dark:bg-gray-800 dark:bg-opacity-40 dark:backdrop-blur-sm"
+            >
+                <h2
+                        class="mb-3 text-lg font-semibold text-gray-800 dark:text-white"
+                >
+                    Work Experience
+                </h2>
+                <div class="flex flex-col">
+                    <div
+                            data-aos="fade-up"
+                            data-aos-duration="600"
+                            data-aos-delay="100"
+                            data-aos-anchor="#work"
+                            class="border-l-2 pl-5 pt-0"
+                    >
+                        <div
+                                class="relative left-[-25px] top-[1.25rem] inline-block h-2 w-2 rounded-full bg-indigo-600 dark:bg-indigo-500"
+                        ></div>
+                        <p class="text-sm text-gray-400">Oct-Nov 2022</p>
+                        <h2 class="font-mono text-xl">Endava Tech Course Java</h2>
+                        <p class="text-sm text-gray-400">
+                            Upgraded my skills, made a big project and got a&nbsp;
+                            <button
+                                    type="button"
+                                    class="inline-flex items-center justify-center gap-2 rounded-[36px] border border-transparent bg-indigo-100 py-1 px-2 text-sm font-semibold text-indigo-500 ring-offset-white transition-all hover:bg-indigo-100 hover:text-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
+                                    data-hs-overlay="#endava-certif-modal"
+                            >
+                                certificate
+                            </button>
+                        </p>
+                    </div>
+                    <div
+                            data-aos="fade-up"
+                            data-aos-duration="600"
+                            data-aos-delay="300"
+                            data-aos-anchor="#work"
+                            class="border-l-2 pl-5 pt-0"
+                    >
+                        <div
+                                class="relative left-[-25px] top-[1.25rem] inline-block h-2 w-2 rounded-full bg-indigo-600 dark:bg-indigo-500"
+                        ></div>
+                        <p class="text-sm text-gray-400">Feb-Aug 2023</p>
+                        <h2 class="font-mono text-xl">Intership at Grid Dynamics</h2>
+                        <p class="text-sm text-gray-400">Learning on intership.</p>
+                    </div>
+                    <div
+                            data-aos="fade-up"
+                            data-aos-duration="600"
+                            data-aos-delay="300"
+                            data-aos-anchor="#work"
+                            class="border-l-2 pl-5 pt-0"
+                    >
+                        <div
+                                class="relative left-[-25px] top-[1.25rem] inline-block h-2 w-2 rounded-full bg-indigo-600 dark:bg-indigo-500"
+                        ></div>
+                        <p class="text-sm text-gray-400">From Aug 2023</p>
+                        <h2 class="font-mono text-xl">Junior Java Software Engineer at Grid Dynamics</h2>
+                        <p class="text-sm text-gray-400">Working on commercial project as Java backend developer.</p>
+                    </div>
                 </div>
-              </div>
+            </div>
 
-              <div
-                class="my-5 flex px-5 md:w-2/4"
-                data-aos="fade-right"
-                data-aos-anchor="#skills"
-                data-aos-delay="600"
-              >
+            <div
+                    id="skills"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    class="mb-6 rounded-[36px] border border-gray-200 bg-white bg-opacity-80 p-6 backdrop-blur-sm dark:border-gray-700 dark:bg-gray-800 dark:bg-opacity-40 dark:backdrop-blur-sm"
+            >
+                <h2
+                        class="mb-3 text-lg font-semibold text-gray-800 dark:text-white"
+                >
+                    Skills
+                </h2>
+                <div class="flex flex-wrap max-md:flex-col">
+                    <div
+                            class="my-5 flex px-5 md:w-2/4"
+                            data-aos="fade-right"
+                            data-aos-anchor="#skills"
+                            data-aos-delay="200"
+                    >
+                        <i
+                                class="bi-translate px-3 text-4xl text-gray-800 dark:text-white"
+                        ></i>
+                        <div>
+                            <h2 class="font-mono text-3xl">Languages</h2>
+                            <p>Russian (native), English (advanced), Romanian</p>
+                        </div>
+                    </div>
+
+                    <div
+                            class="my-5 flex px-5 md:w-2/4"
+                            data-aos="fade-left"
+                            data-aos-anchor="#skills"
+                            data-aos-delay="400"
+                    >
+                        <i
+                                class="bi-database-fill px-3 text-4xl text-gray-800 dark:text-white"
+                        ></i>
+                        <div>
+                            <h2 class="font-mono text-3xl">Databases</h2>
+                            <p class="block">Microsoft SQL Server, PostgreSQL</p>
+                            <p class="block">
+                                T-SQL, PL/SQL, Isolation levels, ACID, Normal forms
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                            class="my-5 flex px-5 md:w-2/4"
+                            data-aos="fade-right"
+                            data-aos-anchor="#skills"
+                            data-aos-delay="600"
+                    >
                 <span class="px-3">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 767.8 768"
-                    width="36"
-                    height="36"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 767.8 768"
+                          width="36"
+                          height="36"
                   >
                     <style>
                       .st0 {
-                        fill: #1f2937;
+                          fill: #1f2937;
                       }
+
                       @media (prefers-color-scheme: dark) {
-                        .st0 {
-                          fill: white;
-                        }
+                          .st0 {
+                              fill: white;
+                          }
                       }
                     </style>
                     <path
-                      class="st0"
-                      d="M698.3 40c-10.8 25.8-24.5 50.3-41 72.8C585.1 40.6 487.1 0 385 0 173.8 0 0 174 0 385.5 0 491 43.2 592 119.6 664.8l14.2 12.6c69.4 58.5 157.3 90.7 248 90.7 200.8 0 369.6-157.4 383.9-358 10.5-98.2-18.3-222.4-67.4-370.1zm-524 627c-6.2 7.7-15.7 12.2-25.6 12.2-18.1 0-32.9-14.9-32.9-33s14.9-33 32.9-33c7.5 0 14.9 2.6 20.7 7.4 14.1 11.4 16.3 32.3 4.9 46.4zm522.4-115.4c-95 126.7-297.9 84-428 90.1 0 0-23.1 1.4-46.3 5.2 0 0 8.7-3.7 20-8 91.3-31.8 134.5-38 190-66.5 104.5-53.2 207.8-169.6 229.3-290.7C621.9 398.2 501.3 498.3 391.4 539c-75.3 27.8-211.3 54.8-211.3 54.8l-5.5-2.9C82 545.8 79.2 345.1 247.5 280.3c73.7-28.4 144.2-12.8 223.8-31.8 85-20.2 183.3-84 223.3-167.2 44.8 133.1 98.7 341.5 2.1 470.3z"
+                            class="st0"
+                            d="M698.3 40c-10.8 25.8-24.5 50.3-41 72.8C585.1 40.6 487.1 0 385 0 173.8 0 0 174 0 385.5 0 491 43.2 592 119.6 664.8l14.2 12.6c69.4 58.5 157.3 90.7 248 90.7 200.8 0 369.6-157.4 383.9-358 10.5-98.2-18.3-222.4-67.4-370.1zm-524 627c-6.2 7.7-15.7 12.2-25.6 12.2-18.1 0-32.9-14.9-32.9-33s14.9-33 32.9-33c7.5 0 14.9 2.6 20.7 7.4 14.1 11.4 16.3 32.3 4.9 46.4zm522.4-115.4c-95 126.7-297.9 84-428 90.1 0 0-23.1 1.4-46.3 5.2 0 0 8.7-3.7 20-8 91.3-31.8 134.5-38 190-66.5 104.5-53.2 207.8-169.6 229.3-290.7C621.9 398.2 501.3 498.3 391.4 539c-75.3 27.8-211.3 54.8-211.3 54.8l-5.5-2.9C82 545.8 79.2 345.1 247.5 280.3c73.7-28.4 144.2-12.8 223.8-31.8 85-20.2 183.3-84 223.3-167.2 44.8 133.1 98.7 341.5 2.1 470.3z"
                     />
                   </svg>
                 </span>
-                <div>
-                  <h2 class="font-mono text-3xl">Spring</h2>
-                  <p class="block">
-                    Spring Boot, Spring MVC, Spring Data, Spring Security
-                  </p>
-                </div>
-              </div>
+                        <div>
+                            <h2 class="font-mono text-3xl">Spring</h2>
+                            <p class="block">
+                                Spring Boot, Spring MVC, Spring Data, Spring Security
+                            </p>
+                        </div>
+                    </div>
 
-              <div
-                class="my-5 flex px-5 md:w-2/4"
-                data-aos="fade-left"
-                data-aos-anchor="#skills"
-                data-aos-delay="800"
-              >
+                    <div
+                            class="my-5 flex px-5 md:w-2/4"
+                            data-aos="fade-left"
+                            data-aos-anchor="#skills"
+                            data-aos-delay="800"
+                    >
                 <span class="px-3">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="36"
-                    height="36"
-                    viewBox="0 0 32 32"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="36"
+                          height="36"
+                          viewBox="0 0 32 32"
                   >
                     <style>
                       @media (prefers-color-scheme: dark) {
-                        path {
-                          fill: white;
-                        }
+                          path {
+                              fill: white;
+                          }
                       }
                     </style>
                     <path
-                      d="M11.622 24.74s-1.23.748.855.962c2.51.32 3.847.267 6.625-.267a10.02 10.02 0 0 0 1.763.855c-6.25 2.672-14.16-.16-9.244-1.55zm-.8-3.473s-1.336 1.015.748 1.23c2.725.267 4.862.32 8.55-.427a3.26 3.26 0 0 0 1.282.801c-7.534 2.244-15.976.214-10.58-1.603zm14.747 6.09s.908.748-1.015 1.336c-3.58 1.07-15.014 1.39-18.22 0-1.122-.48 1.015-1.175 1.7-1.282.695-.16 1.07-.16 1.07-.16-1.23-.855-8.175 1.763-3.526 2.51 12.77 2.084 23.296-.908 19.983-2.404zM12.2 17.633s-5.824 1.39-2.084 1.87c1.603.214 4.755.16 7.694-.053 2.404-.214 4.81-.64 4.81-.64s-.855.374-1.443.748c-5.93 1.55-17.312.855-14.052-.748 2.778-1.336 5.076-1.175 5.076-1.175zm10.42 5.824c5.984-3.1 3.206-6.09 1.282-5.717-.48.107-.695.214-.695.214s.16-.32.534-.427c3.794-1.336 6.786 4.007-1.23 6.09 0 0 .053-.053.107-.16zm-9.83 8.442c5.77.374 14.587-.214 14.8-2.94 0 0-.427 1.07-4.755 1.87-4.916.908-11.007.8-14.587.214 0 0 .748.64 4.542.855z"
-                      fill="#1f2937"
+                            d="M11.622 24.74s-1.23.748.855.962c2.51.32 3.847.267 6.625-.267a10.02 10.02 0 0 0 1.763.855c-6.25 2.672-14.16-.16-9.244-1.55zm-.8-3.473s-1.336 1.015.748 1.23c2.725.267 4.862.32 8.55-.427a3.26 3.26 0 0 0 1.282.801c-7.534 2.244-15.976.214-10.58-1.603zm14.747 6.09s.908.748-1.015 1.336c-3.58 1.07-15.014 1.39-18.22 0-1.122-.48 1.015-1.175 1.7-1.282.695-.16 1.07-.16 1.07-.16-1.23-.855-8.175 1.763-3.526 2.51 12.77 2.084 23.296-.908 19.983-2.404zM12.2 17.633s-5.824 1.39-2.084 1.87c1.603.214 4.755.16 7.694-.053 2.404-.214 4.81-.64 4.81-.64s-.855.374-1.443.748c-5.93 1.55-17.312.855-14.052-.748 2.778-1.336 5.076-1.175 5.076-1.175zm10.42 5.824c5.984-3.1 3.206-6.09 1.282-5.717-.48.107-.695.214-.695.214s.16-.32.534-.427c3.794-1.336 6.786 4.007-1.23 6.09 0 0 .053-.053.107-.16zm-9.83 8.442c5.77.374 14.587-.214 14.8-2.94 0 0-.427 1.07-4.755 1.87-4.916.908-11.007.8-14.587.214 0 0 .748.64 4.542.855z"
+                            fill="#1f2937"
                     />
                     <path
-                      d="M18.996.001s3.313 3.366-3.152 8.442c-5.183 4.114-1.175 6.465 0 9.137-3.046-2.725-5.236-5.13-3.74-7.373C14.294 6.893 20.332 5.3 18.996.001zm-1.7 15.335c1.55 1.763-.427 3.366-.427 3.366s3.954-2.03 2.137-4.542c-1.656-2.404-2.94-3.58 4.007-7.587 0 0-10.953 2.725-5.717 8.763z"
-                      fill="#1f2937"
+                            d="M18.996.001s3.313 3.366-3.152 8.442c-5.183 4.114-1.175 6.465 0 9.137-3.046-2.725-5.236-5.13-3.74-7.373C14.294 6.893 20.332 5.3 18.996.001zm-1.7 15.335c1.55 1.763-.427 3.366-.427 3.366s3.954-2.03 2.137-4.542c-1.656-2.404-2.94-3.58 4.007-7.587 0 0-10.953 2.725-5.717 8.763z"
+                            fill="#1f2937"
                     />
                   </svg>
                 </span>
-                <div>
-                  <h2 class="font-mono text-3xl">Java</h2>
-                  <p class="block">Core, Collections, Streams, Patterns</p>
+                        <div>
+                            <h2 class="font-mono text-3xl">Java</h2>
+                            <p class="block">Core, Collections, Streams, Patterns</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
+</div>
 
+<div
+        id="endava-certif-modal"
+        class="hs-overlay fixed top-0 left-0 z-[60] hidden h-full w-full overflow-y-auto overflow-x-hidden"
+>
     <div
-      id="endava-certif-modal"
-      class="hs-overlay fixed top-0 left-0 z-[60] hidden h-full w-full overflow-y-auto overflow-x-hidden"
+            class="m-3 mt-0 opacity-0 transition-all ease-out hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 lg:mx-auto lg:w-full lg:max-w-4xl"
     >
-      <div
-        class="m-3 mt-0 opacity-0 transition-all ease-out hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 lg:mx-auto lg:w-full lg:max-w-4xl"
-      >
         <div
-          class="flex flex-col rounded-[36px] border bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:shadow-slate-700/[.7]"
+                class="flex flex-col rounded-[36px] border bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:shadow-slate-700/[.7]"
         >
-          <div
-            class="flex items-center justify-between border-b py-3 px-4 dark:border-gray-700"
-          >
-            <h3 class="ml-12 font-bold text-gray-800 dark:text-white">
-              Endava Tech Course Java Certificate
-            </h3>
-            <button
-              type="button"
-              class="hs-dropdown-toggle inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-md text-sm text-gray-500 transition-all hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800"
-              data-hs-overlay="#endava-certif-modal"
+            <div
+                    class="flex items-center justify-between border-b py-3 px-4 dark:border-gray-700"
             >
-              <span class="sr-only">Close</span>
-              <svg
-                class="h-3.5 w-3.5"
-                width="8"
-                height="8"
-                viewBox="0 0 8 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.258206 1.00652C0.351976 0.912791 0.479126 0.860131 0.611706 0.860131C0.744296 0.860131 0.871447 0.912791 0.965207 1.00652L3.61171 3.65302L6.25822 1.00652C6.30432 0.958771 6.35952 0.920671 6.42052 0.894471C6.48152 0.868271 6.54712 0.854471 6.61352 0.853901C6.67992 0.853321 6.74572 0.865971 6.80722 0.891111C6.86862 0.916251 6.92442 0.953381 6.97142 1.00032C7.01832 1.04727 7.05552 1.1031 7.08062 1.16454C7.10572 1.22599 7.11842 1.29183 7.11782 1.35822C7.11722 1.42461 7.10342 1.49022 7.07722 1.55122C7.05102 1.61222 7.01292 1.6674 6.96522 1.71352L4.31871 4.36002L6.96522 7.00648C7.05632 7.10078 7.10672 7.22708 7.10552 7.35818C7.10442 7.48928 7.05182 7.61468 6.95912 7.70738C6.86642 7.80018 6.74102 7.85268 6.60992 7.85388C6.47882 7.85498 6.35252 7.80458 6.25822 7.71348L3.61171 5.06702L0.965207 7.71348C0.870907 7.80458 0.744606 7.85498 0.613506 7.85388C0.482406 7.85268 0.357007 7.80018 0.264297 7.70738C0.171597 7.61468 0.119017 7.48928 0.117877 7.35818C0.116737 7.22708 0.167126 7.10078 0.258206 7.00648L2.90471 4.36002L0.258206 1.71352C0.164476 1.61976 0.111816 1.4926 0.111816 1.36002C0.111816 1.22744 0.164476 1.10028 0.258206 1.00652Z"
-                  fill="currentColor"
+                <h3 class="ml-12 font-bold text-gray-800 dark:text-white">
+                    Endava Tech Course Java Certificate
+                </h3>
+                <button
+                        type="button"
+                        class="hs-dropdown-toggle inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-md text-sm text-gray-500 transition-all hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800"
+                        data-hs-overlay="#endava-certif-modal"
+                >
+                    <span class="sr-only">Close</span>
+                    <svg
+                            class="h-3.5 w-3.5"
+                            width="8"
+                            height="8"
+                            viewBox="0 0 8 8"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                                d="M0.258206 1.00652C0.351976 0.912791 0.479126 0.860131 0.611706 0.860131C0.744296 0.860131 0.871447 0.912791 0.965207 1.00652L3.61171 3.65302L6.25822 1.00652C6.30432 0.958771 6.35952 0.920671 6.42052 0.894471C6.48152 0.868271 6.54712 0.854471 6.61352 0.853901C6.67992 0.853321 6.74572 0.865971 6.80722 0.891111C6.86862 0.916251 6.92442 0.953381 6.97142 1.00032C7.01832 1.04727 7.05552 1.1031 7.08062 1.16454C7.10572 1.22599 7.11842 1.29183 7.11782 1.35822C7.11722 1.42461 7.10342 1.49022 7.07722 1.55122C7.05102 1.61222 7.01292 1.6674 6.96522 1.71352L4.31871 4.36002L6.96522 7.00648C7.05632 7.10078 7.10672 7.22708 7.10552 7.35818C7.10442 7.48928 7.05182 7.61468 6.95912 7.70738C6.86642 7.80018 6.74102 7.85268 6.60992 7.85388C6.47882 7.85498 6.35252 7.80458 6.25822 7.71348L3.61171 5.06702L0.965207 7.71348C0.870907 7.80458 0.744606 7.85498 0.613506 7.85388C0.482406 7.85268 0.357007 7.80018 0.264297 7.70738C0.171597 7.61468 0.119017 7.48928 0.117877 7.35818C0.116737 7.22708 0.167126 7.10078 0.258206 7.00648L2.90471 4.36002L0.258206 1.71352C0.164476 1.61976 0.111816 1.4926 0.111816 1.36002C0.111816 1.22744 0.164476 1.10028 0.258206 1.00652Z"
+                                fill="currentColor"
+                        />
+                    </svg>
+                </button>
+            </div>
+            <div class="overflow-y-auto p-4">
+                <img
+                        src="/img/endava-certif.png"
+                        alt="Endava certificate"
+                        class="mx-auto border border-gray-700 dark:border-gray-200 md:h-[30rem]"
                 />
-              </svg>
-            </button>
-          </div>
-          <div class="overflow-y-auto p-4">
-            <img
-              src="/img/endava-certif.png"
-              alt="Endava certificate"
-              class="mx-auto border border-gray-700 dark:border-gray-200 md:h-[30rem]"
-            />
-          </div>
-          <div
-            class="flex items-center justify-end gap-x-2 border-t py-3 px-4 dark:border-gray-700"
-          >
-            <button
-              type="button"
-              class="hs-dropdown-toggle inline-flex items-center justify-center gap-2 rounded-[36px] border bg-white py-3 px-4 align-middle text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white dark:border-gray-700 dark:bg-slate-900 dark:text-gray-400 dark:hover:bg-slate-800 dark:hover:text-white dark:focus:ring-offset-gray-800"
-              data-hs-overlay="#endava-certif-modal"
+            </div>
+            <div
+                    class="flex items-center justify-end gap-x-2 border-t py-3 px-4 dark:border-gray-700"
             >
-              Close
-            </button>
-          </div>
+                <button
+                        type="button"
+                        class="hs-dropdown-toggle inline-flex items-center justify-center gap-2 rounded-[36px] border bg-white py-3 px-4 align-middle text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white dark:border-gray-700 dark:bg-slate-900 dark:text-gray-400 dark:hover:bg-slate-800 dark:hover:text-white dark:focus:ring-offset-gray-800"
+                        data-hs-overlay="#endava-certif-modal"
+                >
+                    Close
+                </button>
+            </div>
         </div>
-      </div>
     </div>
+</div>
 
-    <script src="/preline/preline.js"></script>
-    <script src="/aos/aos.js"></script>
-    <script>
-      AOS.init({
+<script src="/node_modules/preline/dist/preline.js"></script>
+<script src="/node_modules/aos/dist/aos.js"></script>
+<script src="/node_modules/vanilla-tilt/dist/vanilla-tilt.js"></script>
+<script>
+    AOS.init({
         once: true,
-      });
-    </script>
-  </body>
+    });
+</script>
+</body>
 </html>

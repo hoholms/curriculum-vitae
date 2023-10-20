@@ -21,5 +21,5 @@ app.use('/icons', express.static(path.join(__dirname, '/node_modules/bootstrap-i
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+    console.log(`Server is running on port ${port}`);
 });
